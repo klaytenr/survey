@@ -1,0 +1,13 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+#wrapper{
+    width: 800px;
+    height: 800px;
+    border: black 3px solid;
+    text-align: center;
+}
+.space{
+    margin-top: 50px;
+}

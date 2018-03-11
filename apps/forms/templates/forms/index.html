@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'forms/css/style.css'%}">
+</head>
+<body>
+    <div id="wrapper">
+        <form class="space" action="/process" method="post">
+            {% csrf_token %}
+            Name: <input class="space" type="text" name="name"><br>
+            <select class="space" name="loc">
+                <option value="Burbank">Burbank</option>
+                <option value="DC">DC</option>
+                <option value="Seattle">Seattle</option>
+                <option value="Chicago">Chicago</option>
+            </select><br>
+            <select class="space" name="lang">
+                <option value="Python">Python</option>
+                <option value="Ruby">Ruby</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="PHP">PHP</option>
+            </select><br>
+            Comment (optional): <br><textarea class="space" name="comment" cols="80" rows="8"></textarea><br>
+            <input class="space" type="submit" name="submit">
+        </form>    
+    </div>
+</body>
+</html>

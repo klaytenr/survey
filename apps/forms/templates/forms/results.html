@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'forms/css/style.css'%}">
+</head>
+<body>
+    <p>Submitted {{count}} times</p>
+    <h1>Results:</h1>
+    <p>Name: {{name}}</p>
+    <p>Language: {{language}}</p>
+    <p>Location: {{location}}</p>
+    <p>Comment: {{comment}}</p>
+</body>
+</html>
